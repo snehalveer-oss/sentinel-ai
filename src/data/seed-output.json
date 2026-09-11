@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-11T09:53:11.451Z",
+  "timestamp": "2026-09-11T09:56:31.125Z",
   "generated_by": "Sentinel-AI Static Fallback Engine",
   "plan": {
     "plan_id": "PLAN_5G_PREMIUM",
@@ -8,20 +8,23 @@
     "data_limit_gb": 200
   },
   "subscriber": {
-    "subscriber_id": "SUB_562728",
+    "subscriber_id": "SUB_645520",
     "full_name": "Snehal Veer",
-    "email": "subscriber_562728@telecom-sentinel.io",
+    "email": "subscriber_645520@telecom-sentinel.io",
     "phone_number": "+91-7798952216",
     "status": "ACTIVE"
   },
   "order": {
-    "order_id": "ORD_562728",
+    "order_id": "ORD_645520",
+    "subscriber_id": "SUB_645520",
     "total_amount": 79.99,
     "order_status": "COMPLETED",
-    "idempotency_key": "IDEM_KEY_562728"
+    "idempotency_key": "IDEM_KEY_645520"
   },
   "billing": {
-    "ledger_id": "LEDG_562728",
+    "ledger_id": "LEDG_645520",
+    "order_id": "ORD_645520",
+    "subscriber_id": "SUB_645520",
     "amount_charged": 79.99,
     "payment_status": "SETTLED"
   }
