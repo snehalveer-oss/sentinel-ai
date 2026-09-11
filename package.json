@@ -6,7 +6,7 @@
   "scripts": {
     "agent:seed": "tsx src/agents/dataAgent.ts",
     "agent:contract": "tsx src/agents/contractAgent.ts",
-    "test:e2e": "playwright test",
+    "test:e2e": "playwright test --project=chromium",
     "agent:triage": "tsx src/agents/triageAgent.ts",
     "build": "tsc",
     "docker:up": "docker-compose up -d",
