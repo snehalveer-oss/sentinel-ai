@@ -1,0 +1,28 @@
+{
+  "timestamp": "2026-09-11T15:00:00.000Z",
+  "generated_by": "Sentinel-AI Static Fallback Engine",
+  "plan": {
+    "plan_id": "PLAN_5G_PREMIUM",
+    "plan_name": "5G Ultra Unlimited Premium",
+    "monthly_rate": 79.99,
+    "data_limit_gb": 200
+  },
+  "subscriber": {
+    "subscriber_id": "SUB_994821",
+    "full_name": "Snehal Veer",
+    "email": "snehal.veer.test@telecom-sentinel.io",
+    "phone_number": "+91-7798952216",
+    "status": "ACTIVE"
+  },
+  "order": {
+    "order_id": "ORD_8849102",
+    "total_amount": 79.99,
+    "order_status": "COMPLETED",
+    "idempotency_key": "IDEM_KEY_994821_2026"
+  },
+  "billing": {
+    "ledger_id": "LEDG_7749102",
+    "amount_charged": 79.99,
+    "payment_status": "SETTLED"
+  }
+}

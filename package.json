@@ -4,10 +4,10 @@
   "description": "Enterprise Agentic Hybrid E2E Test Automation & Self-Healing Quality Engine",
   "main": "dist/index.js",
   "scripts": {
-    "agent:seed": "ts-node src/agents/dataAgent.ts",
-    "agent:contract": "ts-node src/agents/contractAgent.ts",
+    "agent:seed": "tsx src/agents/dataAgent.ts",
+    "agent:contract": "tsx src/agents/contractAgent.ts",
     "test:e2e": "playwright test",
-    "agent:triage": "ts-node src/agents/triageAgent.ts",
+    "agent:triage": "tsx src/agents/triageAgent.ts",
     "build": "tsc",
     "docker:up": "docker-compose up -d",
     "docker:down": "docker-compose down"
@@ -28,7 +28,7 @@
     "@playwright/test": "^1.42.0",
     "@types/node": "^20.11.0",
     "@types/pg": "^8.11.0",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.7.1",
     "typescript": "^5.3.3"
   },
   "dependencies": {
