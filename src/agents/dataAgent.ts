@@ -49,12 +49,20 @@ export async function runDataAgent(): Promise<SeedDataManifest> {
     
     // Inject dynamic execution timestamp and unique ID suffix
     const randomId = Math.floor(100000 + Math.random() * 900000);
+    const subId = `SUB_${randomId}`;
+    const ordId = `ORD_${randomId}`;
+
     data.timestamp = new Date().toISOString();
-    data.subscriber.subscriber_id = `SUB_${randomId}`;
+    data.subscriber.subscriber_id = subId;
     data.subscriber.email = `subscriber_${randomId}@telecom-sentinel.io`;
-    data.order.order_id = `ORD_${randomId}`;
+    
+    data.order.order_id = ordId;
+    data.order.subscriber_id = subId;
     data.order.idempotency_key = `IDEM_KEY_${randomId}`;
+
     data.billing.ledger_id = `LEDG_${randomId}`;
+    data.billing.order_id = ordId;
+    data.billing.subscriber_id = subId;
 
     fs.mkdirSync(path.dirname(outputPath), { recursive: true });
     fs.writeFileSync(outputPath, JSON.stringify(data, null, 2));

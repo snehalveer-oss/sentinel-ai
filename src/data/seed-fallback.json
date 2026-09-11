@@ -16,12 +16,15 @@
   },
   "order": {
     "order_id": "ORD_8849102",
+    "subscriber_id": "SUB_994821",
     "total_amount": 79.99,
     "order_status": "COMPLETED",
     "idempotency_key": "IDEM_KEY_994821_2026"
   },
   "billing": {
     "ledger_id": "LEDG_7749102",
+    "order_id": "ORD_8849102",
+    "subscriber_id": "SUB_994821",
     "amount_charged": 79.99,
     "payment_status": "SETTLED"
   }
