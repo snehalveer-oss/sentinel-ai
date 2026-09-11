@@ -1,0 +1,40 @@
+{
+  "name": "sentinel-ai",
+  "version": "1.0.0",
+  "description": "Enterprise Agentic Hybrid E2E Test Automation & Self-Healing Quality Engine",
+  "main": "dist/index.js",
+  "scripts": {
+    "agent:seed": "ts-node src/agents/dataAgent.ts",
+    "agent:contract": "ts-node src/agents/contractAgent.ts",
+    "test:e2e": "playwright test",
+    "agent:triage": "ts-node src/agents/triageAgent.ts",
+    "build": "tsc",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "agentic-ai",
+    "sdet",
+    "test-automation",
+    "rest-api",
+    "sql",
+    "ci-cd"
+  ],
+  "author": "Snehal Veer",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.42.0",
+    "@types/node": "^20.11.0",
+    "@types/pg": "^8.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "openai": "^4.28.0",
+    "pg": "^8.11.3",
+    "zod": "^3.22.4"
+  }
+}
